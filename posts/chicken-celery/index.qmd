@@ -1,7 +1,7 @@
 ---
-title: ""
+title: "Chicken and Celery"
 date: "2023-06-12"
-categories: [cheng]
+categories: [cheng,chicken]
 ---
 
 ## Ingredients
@@ -10,4 +10,5 @@ categories: [cheng]
 
 ## Source
 
-\![\](source.jpg)
+![](source.jpg)
+![](source2.jpg)

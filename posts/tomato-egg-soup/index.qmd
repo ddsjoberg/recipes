@@ -1,7 +1,7 @@
 ---
-title: ""
+title: "Tomato Egg Soup"
 date: "2023-06-12"
-categories: [cheng]
+categories: [cheng,soup]
 ---
 
 ## Ingredients
@@ -10,4 +10,4 @@ categories: [cheng]
 
 ## Source
 
-\![\](source.jpg)
+![](source.jpg)

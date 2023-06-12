@@ -1,7 +1,7 @@
 ---
-title: ""
+title: "Sesame Oil Chicken"
 date: "2023-06-12"
-categories: [cheng]
+categories: [cheng,chicken]
 ---
 
 ## Ingredients
@@ -10,4 +10,4 @@ categories: [cheng]
 
 ## Source
 
-\![\](source.jpg)
+![](source.jpg)

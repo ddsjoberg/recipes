@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Cold Onion Ginger Chicken"
 date: "2023-06-12"
 categories: [cheng]
 ---
@@ -10,4 +10,4 @@ categories: [cheng]
 
 ## Source
 
-\![\](source.jpg)
+![](source.jpg)

@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Corpse Reviver"
 date: "2023-06-12"
 categories: [cocktail,gin]
 ---
@@ -10,4 +10,4 @@ categories: [cocktail,gin]
 
 ## Source
 
-\![\](source.jpg)
+![](source.jpg)
