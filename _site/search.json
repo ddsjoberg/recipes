@@ -116,7 +116,7 @@
     "href": "posts/bbq-noodles/index.html#directions",
     "title": "BBQ Noodles",
     "section": "Directions",
-    "text": "Directions"
+    "text": "Directions\n\nCook udon noodles according to package instructions and set aside\nChop onion, and saute in oil in pan\nAdd meat to pan. Sl and cook through\nAdd BBQ and Soy Sauce to pan\nMix in noodles and serve"
   },
   {
     "objectID": "posts/bbq-noodles/index.html#source",
@@ -481,5 +481,19 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "posts/bbq-noodles/index.html",
+    "href": "posts/bbq-noodles/index.html",
+    "title": "BBQ Noodles",
+    "section": "",
+    "text": "2 T Oil (Olive Oil, Vegetable Oil, etc.)\n0.5 Small Onion\n0.5 cup thinly sliced pork\n1 T Chinese BBQ Sauce\n0.5 T Soy Sauce\n2 bunches of Dry Udon Noodles"
+  },
+  {
+    "objectID": "posts/bbq-noodles/index.html#ingredients",
+    "href": "posts/bbq-noodles/index.html#ingredients",
+    "title": "BBQ Noodles",
+    "section": "",
+    "text": "2 T Oil (Olive Oil, Vegetable Oil, etc.)\n0.5 Small Onion\n0.5 cup thinly sliced pork\n1 T Chinese BBQ Sauce\n0.5 T Soy Sauce\n2 bunches of Dry Udon Noodles"
   }
 ]
