@@ -2,15 +2,15 @@ project:
   type: website
 
 website:
-  title: "Sjochengberg Cookbook"
+  title: "Sjochengberg Recipes"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
+        href: https://github.com/ddsjoberg/recipes
 format:
   html:
-    theme: flatly
+    theme: yeti
     css: styles.css
 
 editor: visual
