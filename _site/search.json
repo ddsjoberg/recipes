@@ -413,6 +413,27 @@
     "text": "Source"
   },
   {
+    "objectID": "posts/banana-bread/index.html",
+    "href": "posts/banana-bread/index.html",
+    "title": "Banana Bread",
+    "section": "",
+    "text": "Monica Holtzclaw made this for Theodore a number of times in the Fall of 2023, and it was always a big hit!"
+  },
+  {
+    "objectID": "posts/banana-bread/index.html#ingredients",
+    "href": "posts/banana-bread/index.html#ingredients",
+    "title": "Banana Bread",
+    "section": "Ingredients",
+    "text": "Ingredients\n\n2 cups all-purpose flour\n1.5 t baking powder\n0.5 t baking soda\n0.25 t salt\n0.25 t ground cinnamon\n1/8 t ground nutmeg\n2 eggs, beaten\n1.5 cups mashed ripe bananas (~5 medium)\n1 cup sugar\n1/2 cup cooking oil or melted butter\n1/4 cups chopped walnuts or chocolate chips"
+  },
+  {
+    "objectID": "posts/banana-bread/index.html#directions",
+    "href": "posts/banana-bread/index.html#directions",
+    "title": "Banana Bread",
+    "section": "Directions",
+    "text": "Directions\n\nPreheat oven to 350F\nGrease bottom and 1/2 inch up the sides of one 9x5x3-inch or two 7.5x3.5x2-inch loaf pans and set aside.\nIn a large bowl combine flour, baking powder, baking soda salt, cinnamon, and nutmeg. Make a well in the center of flour mixture and set aside.\nIn a medium bowl combine eggs, banana, sugar, and oil.\nAdd egg mixture all at once to the flour mixture. Stir just until moistened. Fold in walnuts or chocolate chips.\nSpoon batter into prepared load pan(s).\nBake for 55 to 60 minutes for 9x5x3-inch pan or 40 to 45 minutes for the 7.5x3.5x2-inch loaf pans or until a wooden toothpick inserted into the center comes out clean.\nCool in pan on a wire rack for 10 minutes. Remove from pan and let cool completely on rack."
+  },
+  {
     "objectID": "posts/honey-chicken/index.html#directions",
     "href": "posts/honey-chicken/index.html#directions",
     "title": "Honey Chicken",
@@ -516,26 +537,5 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
-  },
-  {
-    "objectID": "posts/banana-bread/index.html",
-    "href": "posts/banana-bread/index.html",
-    "title": "Banana Bread",
-    "section": "",
-    "text": "Monica Holtzclaw made this for Theodore a number of times in the Fall of 2023, and it was always a big hit!"
-  },
-  {
-    "objectID": "posts/banana-bread/index.html#ingredients",
-    "href": "posts/banana-bread/index.html#ingredients",
-    "title": "Banana Bread",
-    "section": "Ingredients",
-    "text": "Ingredients\n\n2 cups all-purpose flour\n1.5 t baking powder\n0.5 t baking soda\n0.25 t salt\n0.25 t ground cinnamon\n1/8 t ground nutmeg\n2 eggs, beaten\n1.5 cups mashed ripe bananas (~5 medium)\n1 cup sugar\n1/2 cup cooking oil or melted butter\n1/4 cups chopped walnuts or chocolate chips"
-  },
-  {
-    "objectID": "posts/banana-bread/index.html#directions",
-    "href": "posts/banana-bread/index.html#directions",
-    "title": "Banana Bread",
-    "section": "Directions",
-    "text": "Directions\n\nPreheat oven to 350F\nGrease bottom and 1/2 inch up the sides of one 9x5x3-inch or two 7.5x3.5x2-inch loaf pans and set aside.\nIn a large bowl combine flour, baking powder, baking soda salt, cinnamon, and nutmeg. Make a well in the center of flour mixture and set aside.\nIn a medium bowl combine eggs, banana, sugar, and oil.\nAdd egg mixture all at once to the flour mixture. Stir just until moistened. Fold in walnuts or chocolate chips.\nSpoon batter into prepared load pan(s).\nBake for 55 to 60 minutes for 9x5x3-inch pan or 40 to 45 minutes for the 7.5x3.5x2-inch loaf pans or until a wooden toothpick inserted into the center comes out clean.\nCool in pan on a wire rack for 10 minutes. Remove from pan and let cool completely on rack."
   }
 ]

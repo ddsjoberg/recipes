@@ -5,7 +5,6 @@ website:
   title: "Sjochengberg Recipes"
   navbar:
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/ddsjoberg/recipes
 format:
