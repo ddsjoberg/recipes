@@ -168,30 +168,142 @@
     "text": "Source"
   },
   {
-    "objectID": "posts/honey-chicken/index.html#directions",
-    "href": "posts/honey-chicken/index.html#directions",
-    "title": "Honey Chicken",
+    "objectID": "posts/kajiki-fish/index.html#directions",
+    "href": "posts/kajiki-fish/index.html#directions",
+    "title": "Kajiki Fish",
     "section": "Directions",
     "text": "Directions"
   },
   {
-    "objectID": "posts/honey-chicken/index.html#source",
-    "href": "posts/honey-chicken/index.html#source",
-    "title": "Honey Chicken",
+    "objectID": "posts/kajiki-fish/index.html#source",
+    "href": "posts/kajiki-fish/index.html#source",
+    "title": "Kajiki Fish",
     "section": "Source",
-    "text": "Source\n![](source.jpg)"
+    "text": "Source"
   },
   {
-    "objectID": "posts/pickled-cucumber/index.html#directions",
-    "href": "posts/pickled-cucumber/index.html#directions",
-    "title": "Pickled Cucumber",
+    "objectID": "posts/my-favorite-chicken/index.html#ingredients",
+    "href": "posts/my-favorite-chicken/index.html#ingredients",
+    "title": "My Favorite Chicken",
+    "section": "Ingredients",
+    "text": "Ingredients"
+  },
+  {
+    "objectID": "posts/my-favorite-chicken/index.html#directions",
+    "href": "posts/my-favorite-chicken/index.html#directions",
+    "title": "My Favorite Chicken",
     "section": "Directions",
     "text": "Directions"
   },
   {
-    "objectID": "posts/pickled-cucumber/index.html#source",
-    "href": "posts/pickled-cucumber/index.html#source",
-    "title": "Pickled Cucumber",
+    "objectID": "posts/my-favorite-chicken/index.html#source",
+    "href": "posts/my-favorite-chicken/index.html#source",
+    "title": "My Favorite Chicken",
+    "section": "Source",
+    "text": "Source"
+  },
+  {
+    "objectID": "posts/mapo-tofu/index.html#directions",
+    "href": "posts/mapo-tofu/index.html#directions",
+    "title": "Mapo Tofu",
+    "section": "Directions",
+    "text": "Directions"
+  },
+  {
+    "objectID": "posts/mapo-tofu/index.html#source",
+    "href": "posts/mapo-tofu/index.html#source",
+    "title": "Mapo Tofu",
+    "section": "Source",
+    "text": "Source"
+  },
+  {
+    "objectID": "posts/pork-chops/index.html#directions",
+    "href": "posts/pork-chops/index.html#directions",
+    "title": "Pork Chops",
+    "section": "Directions",
+    "text": "Directions"
+  },
+  {
+    "objectID": "posts/pork-chops/index.html#source",
+    "href": "posts/pork-chops/index.html#source",
+    "title": "Pork Chops",
+    "section": "Source",
+    "text": "Source"
+  },
+  {
+    "objectID": "posts/hot-and-sour-soup/index.html#directions",
+    "href": "posts/hot-and-sour-soup/index.html#directions",
+    "title": "Hot and Sour Soup",
+    "section": "Directions",
+    "text": "Directions"
+  },
+  {
+    "objectID": "posts/hot-and-sour-soup/index.html#source",
+    "href": "posts/hot-and-sour-soup/index.html#source",
+    "title": "Hot and Sour Soup",
+    "section": "Source",
+    "text": "Source"
+  },
+  {
+    "objectID": "posts/banana-bread/index.html",
+    "href": "posts/banana-bread/index.html",
+    "title": "Banana Bread",
+    "section": "",
+    "text": "Monica Holtzclaw made this for Theodore a number of times in the Fall of 2023, and it was always a big hit!"
+  },
+  {
+    "objectID": "posts/banana-bread/index.html#ingredients",
+    "href": "posts/banana-bread/index.html#ingredients",
+    "title": "Banana Bread",
+    "section": "Ingredients",
+    "text": "Ingredients\n\n2 cups all-purpose flour\n1.5 t baking powder\n0.5 t baking soda\n0.25 t salt\n0.25 t ground cinnamon\n1/8 t ground nutmeg\n2 eggs, beaten\n1.5 cups mashed ripe bananas (~5 medium)\n1 cup sugar\n1/2 cup cooking oil or melted butter\n1/4 cups chopped walnuts or chocolate chips"
+  },
+  {
+    "objectID": "posts/banana-bread/index.html#directions",
+    "href": "posts/banana-bread/index.html#directions",
+    "title": "Banana Bread",
+    "section": "Directions",
+    "text": "Directions\n\nPreheat oven to 350F\nGrease bottom and 1/2 inch up the sides of one 9x5x3-inch or two 7.5x3.5x2-inch loaf pans and set aside.\nIn a large bowl combine flour, baking powder, baking soda salt, cinnamon, and nutmeg. Make a well in the center of flour mixture and set aside.\nIn a medium bowl combine eggs, banana, sugar, and oil.\nAdd egg mixture all at once to the flour mixture. Stir just until moistened. Fold in walnuts or chocolate chips.\nSpoon batter into prepared load pan(s).\nBake for 55 to 60 minutes for 9x5x3-inch pan or 40 to 45 minutes for the 7.5x3.5x2-inch loaf pans or until a wooden toothpick inserted into the center comes out clean.\nCool in pan on a wire rack for 10 minutes. Remove from pan and let cool completely on rack."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Recipes",
+    "section": "",
+    "text": "Banana Pudding\n\n\n\n\n\n\n\ndessert\n\n\n\n\n\n\n\n\n\n\n\nNov 19, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBanana Bread\n\n\n\n\n\n\n\ndessert\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKao Soi\n\n\n\n\n\n\n\nchicken\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCreamy Orecchiette with Spring Onions, Fennel, and Bacon\n\n\n\n\n\n\n\npasta\n\n\nbacon\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nGarlic Noodles\n\n\n\n\n\n\n\npasta\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSesame Oil Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHot and Sour Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCabbage and Pork\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Chops\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMapo Tofu\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPickled Cucumber\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMy Favorite Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHoney Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKajiki Fish\n\n\n\n\n\n\n\ncheng\n\n\nfish\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBBQ Noodles\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nFried Rice\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nChinese Cabbage Soup\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCorn Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeer Duck\n\n\n\n\n\n\n\ncheng\n\n\nduck\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nChicken and Celery\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCold Onion Ginger Chicken\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPenne Alla Vodka\n\n\n\n\n\n\n\npasta\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPeanut Butter Pasta\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCorpse Reviver\n\n\n\n\n\n\n\ncocktail\n\n\ngin\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Dumplings\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSesame Oil Noodle Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeef Brocolli\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nUme Ice\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nOyster Sauce Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeef Jerky\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Spare Ribs\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKalbi Beef\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nTomato Egg Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/sesame-oil-chicken/index.html#directions",
+    "href": "posts/sesame-oil-chicken/index.html#directions",
+    "title": "Sesame Oil Chicken",
+    "section": "Directions",
+    "text": "Directions"
+  },
+  {
+    "objectID": "posts/sesame-oil-chicken/index.html#source",
+    "href": "posts/sesame-oil-chicken/index.html#source",
+    "title": "Sesame Oil Chicken",
+    "section": "Source",
+    "text": "Source"
+  },
+  {
+    "objectID": "posts/cabbage-and-pork/index.html#directions",
+    "href": "posts/cabbage-and-pork/index.html#directions",
+    "title": "Cabbage and Pork",
+    "section": "Directions",
+    "text": "Directions"
+  },
+  {
+    "objectID": "posts/cabbage-and-pork/index.html#source",
+    "href": "posts/cabbage-and-pork/index.html#source",
+    "title": "Cabbage and Pork",
     "section": "Source",
     "text": "Source"
   },
@@ -224,144 +336,53 @@
     "text": "Directions\n\nIn a large, straight-sided sauté pan or Dutch oven, cook bacon over medium-low heat, turning occasionally, until meaty parts are crisp and fatty parts are tender, 8 to 10 minutes. Using tongs, transfer bacon to a cutting board and reserve rendered bacon fat in the pan. Cut bacon crosswise into 3/4-inch pieces; set aside.\nReturn pan to stovetop and increase heat to medium-high. Add white and light green spring onion parts, fennel, and water, season with salt and cook, stirring frequently with a rubber spatula, until vegetables just begin to soften, about 5 minutes. Add baking soda, stir to combine, and continue to cook until vegetables are very soft and beginning to break down, about 8 minutes longer.\nAdd remaining green parts of spring onions. Cook until well-incorporated with vegetable mixture and just beginning to soften, about 3 minutes. Add cream, bring to a simmer, and cook until mixture is slightly thickened, about 2 minutes.\nTransfer mixture to a blender and blend on high speed until smooth and emulsified, about 1 minute. Season lightly with salt. Wipe out sauté pan and transfer blended sauce back to the pan, passing through a fine-mesh strainer if desired. Warm sauce over low heat, occasionally scraping down the sides of the pan to prevent skin from forming.\nMeanwhile, in a pot of salted boiling water, cook orecchiette until just shy of al dente (about 1 minute less than the package directs). Reserve pasta cooking water.\nTransfer pasta to pan along with 1/2 cup pasta water and bacon, increase heat to high, and cook, stirring rapidly until sauce has thickened slightly and pasta is well-coated, about 1 minute. Remove from heat, season generously with pepper, add Parmigiano, and stir rapidly to combine. Season with salt, if needed. Divide pasta into serving bowls and garnish with reserved fennel fronds. Serve immediately, passing more cheese at the table."
   },
   {
-    "objectID": "posts/cabbage-and-pork/index.html#directions",
-    "href": "posts/cabbage-and-pork/index.html#directions",
-    "title": "Cabbage and Pork",
+    "objectID": "posts/pickled-cucumber/index.html#directions",
+    "href": "posts/pickled-cucumber/index.html#directions",
+    "title": "Pickled Cucumber",
     "section": "Directions",
     "text": "Directions"
   },
   {
-    "objectID": "posts/cabbage-and-pork/index.html#source",
-    "href": "posts/cabbage-and-pork/index.html#source",
-    "title": "Cabbage and Pork",
+    "objectID": "posts/pickled-cucumber/index.html#source",
+    "href": "posts/pickled-cucumber/index.html#source",
+    "title": "Pickled Cucumber",
     "section": "Source",
     "text": "Source"
   },
   {
-    "objectID": "posts/sesame-oil-chicken/index.html#directions",
-    "href": "posts/sesame-oil-chicken/index.html#directions",
-    "title": "Sesame Oil Chicken",
+    "objectID": "posts/honey-chicken/index.html#directions",
+    "href": "posts/honey-chicken/index.html#directions",
+    "title": "Honey Chicken",
     "section": "Directions",
     "text": "Directions"
   },
   {
-    "objectID": "posts/sesame-oil-chicken/index.html#source",
-    "href": "posts/sesame-oil-chicken/index.html#source",
-    "title": "Sesame Oil Chicken",
+    "objectID": "posts/honey-chicken/index.html#source",
+    "href": "posts/honey-chicken/index.html#source",
+    "title": "Honey Chicken",
     "section": "Source",
-    "text": "Source"
+    "text": "Source\n![](source.jpg)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/banana-pudding/index.html",
+    "href": "posts/banana-pudding/index.html",
+    "title": "Banana Pudding",
     "section": "",
-    "text": "About this blog"
+    "text": "This recipe comes from the Magnolia Bakery Cookbook."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Recipes",
-    "section": "",
-    "text": "Banana Bread\n\n\n\n\n\n\n\ndessert\n\n\n\n\n\n\n\n\n\n\n\nNov 18, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKao Soi\n\n\n\n\n\n\n\nchicken\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nNov 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCreamy Orecchiette with Spring Onions, Fennel, and Bacon\n\n\n\n\n\n\n\npasta\n\n\nbacon\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nGarlic Noodles\n\n\n\n\n\n\n\npasta\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nSep 4, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSesame Oil Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHot and Sour Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCabbage and Pork\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Chops\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMapo Tofu\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPickled Cucumber\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nMy Favorite Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nHoney Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKajiki Fish\n\n\n\n\n\n\n\ncheng\n\n\nfish\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBBQ Noodles\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nFried Rice\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nChinese Cabbage Soup\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCorn Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeer Duck\n\n\n\n\n\n\n\ncheng\n\n\nduck\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nChicken and Celery\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCold Onion Ginger Chicken\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPenne Alla Vodka\n\n\n\n\n\n\n\npasta\n\n\navi\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPeanut Butter Pasta\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nCorpse Reviver\n\n\n\n\n\n\n\ncocktail\n\n\ngin\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Dumplings\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nSesame Oil Noodle Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeef Brocolli\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nUme Ice\n\n\n\n\n\n\n\ncheng\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nOyster Sauce Chicken\n\n\n\n\n\n\n\ncheng\n\n\nchicken\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nBeef Jerky\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nPork Spare Ribs\n\n\n\n\n\n\n\ncheng\n\n\npork\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nKalbi Beef\n\n\n\n\n\n\n\ncheng\n\n\nbeef\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\n  \n\n\n\n\nTomato Egg Soup\n\n\n\n\n\n\n\ncheng\n\n\nsoup\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2023\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/banana-bread/index.html",
-    "href": "posts/banana-bread/index.html",
-    "title": "Banana Bread",
-    "section": "",
-    "text": "Monica Holtzclaw made this for Theodore a number of times in the Fall of 2023, and it was always a big hit!"
-  },
-  {
-    "objectID": "posts/banana-bread/index.html#ingredients",
-    "href": "posts/banana-bread/index.html#ingredients",
-    "title": "Banana Bread",
+    "objectID": "posts/banana-pudding/index.html#ingredients",
+    "href": "posts/banana-pudding/index.html#ingredients",
+    "title": "Banana Pudding",
     "section": "Ingredients",
-    "text": "Ingredients\n\n2 cups all-purpose flour\n1.5 t baking powder\n0.5 t baking soda\n0.25 t salt\n0.25 t ground cinnamon\n1/8 t ground nutmeg\n2 eggs, beaten\n1.5 cups mashed ripe bananas (~5 medium)\n1 cup sugar\n1/2 cup cooking oil or melted butter\n1/4 cups chopped walnuts or chocolate chips"
+    "text": "Ingredients\n\n1 (14 oz) can sweetened condensed milk\n1 ½ cups ice cold water\n1 (3.4 oz) box instant vanilla pudding mix\n3 cups heavy cream\n4 cups sliced barely ripe bananas, (see note)\n1 (12 oz.) box Nilla Wafers"
   },
   {
-    "objectID": "posts/banana-bread/index.html#directions",
-    "href": "posts/banana-bread/index.html#directions",
-    "title": "Banana Bread",
+    "objectID": "posts/banana-pudding/index.html#directions",
+    "href": "posts/banana-pudding/index.html#directions",
+    "title": "Banana Pudding",
     "section": "Directions",
-    "text": "Directions\n\nPreheat oven to 350F\nGrease bottom and 1/2 inch up the sides of one 9x5x3-inch or two 7.5x3.5x2-inch loaf pans and set aside.\nIn a large bowl combine flour, baking powder, baking soda salt, cinnamon, and nutmeg. Make a well in the center of flour mixture and set aside.\nIn a medium bowl combine eggs, banana, sugar, and oil.\nAdd egg mixture all at once to the flour mixture. Stir just until moistened. Fold in walnuts or chocolate chips.\nSpoon batter into prepared load pan(s).\nBake for 55 to 60 minutes for 9x5x3-inch pan or 40 to 45 minutes for the 7.5x3.5x2-inch loaf pans or until a wooden toothpick inserted into the center comes out clean.\nCool in pan on a wire rack for 10 minutes. Remove from pan and let cool completely on rack."
-  },
-  {
-    "objectID": "posts/hot-and-sour-soup/index.html#directions",
-    "href": "posts/hot-and-sour-soup/index.html#directions",
-    "title": "Hot and Sour Soup",
-    "section": "Directions",
-    "text": "Directions"
-  },
-  {
-    "objectID": "posts/hot-and-sour-soup/index.html#source",
-    "href": "posts/hot-and-sour-soup/index.html#source",
-    "title": "Hot and Sour Soup",
-    "section": "Source",
-    "text": "Source"
-  },
-  {
-    "objectID": "posts/pork-chops/index.html#directions",
-    "href": "posts/pork-chops/index.html#directions",
-    "title": "Pork Chops",
-    "section": "Directions",
-    "text": "Directions"
-  },
-  {
-    "objectID": "posts/pork-chops/index.html#source",
-    "href": "posts/pork-chops/index.html#source",
-    "title": "Pork Chops",
-    "section": "Source",
-    "text": "Source"
-  },
-  {
-    "objectID": "posts/mapo-tofu/index.html#directions",
-    "href": "posts/mapo-tofu/index.html#directions",
-    "title": "Mapo Tofu",
-    "section": "Directions",
-    "text": "Directions"
-  },
-  {
-    "objectID": "posts/mapo-tofu/index.html#source",
-    "href": "posts/mapo-tofu/index.html#source",
-    "title": "Mapo Tofu",
-    "section": "Source",
-    "text": "Source"
-  },
-  {
-    "objectID": "posts/my-favorite-chicken/index.html#ingredients",
-    "href": "posts/my-favorite-chicken/index.html#ingredients",
-    "title": "My Favorite Chicken",
-    "section": "Ingredients",
-    "text": "Ingredients"
-  },
-  {
-    "objectID": "posts/my-favorite-chicken/index.html#directions",
-    "href": "posts/my-favorite-chicken/index.html#directions",
-    "title": "My Favorite Chicken",
-    "section": "Directions",
-    "text": "Directions"
-  },
-  {
-    "objectID": "posts/my-favorite-chicken/index.html#source",
-    "href": "posts/my-favorite-chicken/index.html#source",
-    "title": "My Favorite Chicken",
-    "section": "Source",
-    "text": "Source"
-  },
-  {
-    "objectID": "posts/kajiki-fish/index.html#directions",
-    "href": "posts/kajiki-fish/index.html#directions",
-    "title": "Kajiki Fish",
-    "section": "Directions",
-    "text": "Directions"
-  },
-  {
-    "objectID": "posts/kajiki-fish/index.html#source",
-    "href": "posts/kajiki-fish/index.html#source",
-    "title": "Kajiki Fish",
-    "section": "Source",
-    "text": "Source"
+    "text": "Directions\n\nIn a large bowl, beat together the sweetened condensed milk and water until well combined - about 1 minute. Add the pudding mix and beat well - about 2 minutes. Cover and refrigerate for 3-4 hours or overnight. It is very important to allow the proper amount of time for the pudding mixture to set. It will be watery if you don’t let it set up long enough.\nIn a large bowl, whip the heavy cream until stiff peaks form. Gently fold the whipped cream into the pudding mixture until no streaks of pudding remain.\nDessert can either be made in individual portions or in a large glass bowl with 4-5 quart capacity (a 9x13 baking dish also works).\nTo assemble dessert, arrange 1/3 of the Nilla wafers covering the bottom, overlapping if necessary. Next, layer 1/3 of the bananas, and 1/3 of the pudding mixture. Repeat twice more, garnishing with additional wafers or wafer crumbs on the top layer. Cover tightly and allow to chill in the fridge for at least 4 hours - or up to 8 hours, no longer (because bananas will start to brown - see Notes for tips on preventing browning)."
   },
   {
     "objectID": "posts/fried-rice/index.html#directions",
