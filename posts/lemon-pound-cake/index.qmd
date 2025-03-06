@@ -1,7 +1,7 @@
 ---
 title: "Ritz Carlton Lemon Pound Cake"
 date: "2023-12-22"
-categories: [dessert,cake]
+categories: [dessert]
 ---
 
 Baked this recipe from [Plain Chicken](https://www.plainchicken.co%5B%5D()m/lemon-pound-cake/). No adjustments needed, flawless as is!
