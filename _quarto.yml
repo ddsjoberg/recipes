@@ -9,8 +9,9 @@ website:
         href: https://github.com/ddsjoberg/recipes
 format:
   html:
-    theme: yeti
-    css: styles.css
+    theme: 
+      - yeti
+      - styles.scss
 
 editor: visual
 
