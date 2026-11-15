@@ -424,9 +424,16 @@ body {
     inline-size: min(100%, 50rem);
   }
   main.content > #ingredients,
-  main.content > #directions {
+  main.content > #directions,
+  main.content > #directions ~ * {
     inline-size: auto;
     justify-self: stretch;
+  }
+  /* Notes, Source, etc. stay in the right column under the directions.
+     A sticky element stays stuck until the end of its parent (all of
+     <main>), so anything full-width below it would be slid over. */
+  main.content > #directions ~ * {
+    grid-column: 2;
   }
   main.content > #ingredients {
     grid-column: 1;
