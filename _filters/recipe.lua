@@ -10,6 +10,8 @@ existing Markdown, so posts need no special syntax:
   the hero image (high fetch priority) and its duplicate in the body is removed.
 * Images get alt text when it is empty, lazy loading, async decoding, and
   intrinsic width/height to stop layout shift.
+* A scale picker (½×, 1×, 2×, 3×) is added; assets/scale.js rewrites the
+  ingredient amounts.
 * A "Keep screen on" switch is added (enabled by assets/head.html when the
   browser supports the Screen Wake Lock API).
 ]]
@@ -116,10 +118,23 @@ function Pandoc(doc)
 
     if keep then out:insert(blk) end
 
-    -- "Keep screen on" switch, first thing in the Ingredients section.
-    if blk.t == "Header" and section == "ingredients" then
-      out:insert(pandoc.RawBlock("html",
-        '<label class="wake-lock" hidden><input type="checkbox" switch role="switch"> Keep screen on</label>'))
+    -- Cooking tools, first thing in the Ingredients section (only under the
+    -- "## Ingredients" heading itself, not its subheadings): the scale picker
+    -- (assets/scale.js) and the "Keep screen on" switch (assets/head.html).
+    -- Both stay hidden until their script enables them.
+    if blk.t == "Header" and blk.level <= 2 and section == "ingredients" then
+      out:insert(pandoc.RawBlock("html", table.concat({
+        '<div class="recipe-tools">',
+        '<fieldset class="recipe-scale" hidden>',
+        '<legend>Scale</legend>',
+        '<label><input type="radio" name="recipe-scale" value="0.5"><span>½×</span></label>',
+        '<label><input type="radio" name="recipe-scale" value="1" checked><span>1×</span></label>',
+        '<label><input type="radio" name="recipe-scale" value="2"><span>2×</span></label>',
+        '<label><input type="radio" name="recipe-scale" value="3"><span>3×</span></label>',
+        '</fieldset>',
+        '<label class="wake-lock" hidden><input type="checkbox" switch role="switch"> Keep screen on</label>',
+        '</div>',
+      }, "\n")))
     end
   end
 
