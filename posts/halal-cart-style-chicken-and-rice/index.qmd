@@ -1,5 +1,6 @@
 ---
 title: "Halal Cart-Style Chicken and Rice With White Sauce"
+image: PXL_20260111_015046231.PORTRAIT-1600.webp
 date: "2026-01-12"
 categories: [dinner,chicken,halal]
 ---
@@ -114,7 +115,7 @@ This is a mix of three different recipes.
 
 1. Lightly dress the salad before serving.
 
-![](PXL_20260111_015046231.PORTRAIT.jpg)
+![](PXL_20260111_015046231.PORTRAIT-1600.webp)
 
 ## Notes
 

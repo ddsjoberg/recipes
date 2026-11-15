@@ -1,3 +1,22 @@
 /*-- scss:defaults --*/
 
-$primary: #B2BEB5;
+// Bootstrap/Quarto Sass variables only. New rules go in assets/recipes.css,
+// so modern CSS (oklch, light-dark, @container, :has) never passes through Sass.
+
+// Sage is the brand color. It is too light for text on white, so links and
+// buttons use a deeper sage, and the light sage is kept for surfaces.
+$primary: #4a6656;
+$link-color: #3f5a4b;
+
+$body-bg: #fbfaf6;
+$body-color: #23282a;
+
+// Use system fonts instead of yeti's Google Fonts request (one less
+// render-blocking stylesheet).
+$web-font-path: false;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$headings-font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, "Bitstream Charter", Georgia, serif;
+$headings-font-weight: 600;
+
+$navbar-bg: #2f3a34;
+$navbar-fg: #f3f1ea;

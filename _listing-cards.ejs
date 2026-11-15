@@ -1,0 +1,30 @@
+```{=html}
+<div class="list recipe-grid">
+<% items.forEach((item, i) => { %>
+<article class="recipe-card" <%= metadataAttrs(item) %>>
+  <% if (item.image) { %>
+  <img class="recipe-card-media" src="<%- item.image %>" alt=""
+       width="400" height="300" decoding="async"
+       <%- i < 4 ? 'fetchpriority="high"' : 'loading="lazy"' %>>
+  <% } else { %>
+  <div class="recipe-card-media recipe-card-placeholder" aria-hidden="true"><%= (item.title || "?").trim().charAt(0) %></div>
+  <% } %>
+  <div class="recipe-card-body">
+    <h2 class="recipe-card-title listing-title no-anchor">
+      <a href="<%- item.path %>"><%= item.title %></a>
+    </h2>
+    <% if (item.categories) { %>
+    <ul class="recipe-card-tags listing-categories" aria-label="Categories">
+      <% for (const category of item.categories) { %>
+      <li><button type="button" class="listing-category" onclick="window.quartoListingCategory(btoa('<%= category %>'))"><%= category %></button></li>
+      <% } %>
+    </ul>
+    <% } %>
+    <% if (item.date) { %>
+    <p class="recipe-card-date listing-date"><%= item.date %></p>
+    <% } %>
+  </div>
+</article>
+<% }) %>
+</div>
+```

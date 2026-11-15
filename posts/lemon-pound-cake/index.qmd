@@ -1,5 +1,6 @@
 ---
 title: "Ritz Carlton Lemon Pound Cake"
+image: PXL_20250301_012801549-1600.webp
 date: "2023-12-22"
 categories: [dessert]
 ---
@@ -31,6 +32,6 @@ Baked this recipe from [Plain Chicken](https://www.plainchicken.co%5B%5D()m/lemo
 
 I found this to be done in the Novato oven around 50 minutes in.
 
-![](IMG-20250228-WA0009.jpg.crdownload)
+![](IMG-20250228-WA0009-1600.webp)
 
-![](PXL_20250301_012801549.jpg.crdownload)
+![](PXL_20250301_012801549-1600.webp)

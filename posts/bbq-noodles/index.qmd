@@ -1,7 +1,7 @@
 ---
 title: "BBQ Noodles"
 date: "2023-06-12"
-image: bbq-noodles.jpg
+image: bbq-noodles-1600.webp
 categories: [cheng,pork]
 ---
 
@@ -27,7 +27,7 @@ categories: [cheng,pork]
 4.  Add BBQ and Soy Sauce to pan
 5.  Mix in noodles and serve
 
-![](bbq-noodles.jpg){width=50%}
+![](bbq-noodles-1600.webp){width=50%}
 
 ## Source
 

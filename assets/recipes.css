@@ -1,0 +1,538 @@
+/*
+  Recipes site styles, on top of Quarto's Bootstrap theme (styles.scss).
+
+  Bootstrap is loaded unlayered, and unlayered CSS always beats @layer CSS, so
+  these rules are deliberately not in cascade layers. Specificity is kept low
+  with :where() instead.
+*/
+
+/* ---------- Tokens ---------- */
+
+:root {
+  color-scheme: light;
+
+  /* Literal palette (OKLCH). Sage is the brand hue. */
+  --sage-hue: 155;
+  --sage-200: oklch(0.86 0.025 var(--sage-hue));
+  --sage-300: oklch(0.78 0.03 var(--sage-hue)); /* ≈ #B2BEB5, the original brand color */
+  --sage-600: oklch(0.48 0.045 var(--sage-hue));
+  --sage-800: oklch(0.3 0.025 var(--sage-hue));
+  --paper: oklch(0.985 0.006 90);
+  --ink: oklch(0.26 0.01 220);
+  --night: oklch(0.2 0.008 var(--sage-hue));
+  --night-ink: oklch(0.92 0.01 90);
+  --tomato: oklch(0.62 0.17 35);
+
+  /* Semantic tokens. light-dark() follows color-scheme, which follows
+     Quarto's light/dark toggle (see the :has(link...) rule below). */
+  --surface: light-dark(var(--paper), var(--night));
+  --surface-raised: light-dark(white, oklch(0.25 0.01 var(--sage-hue)));
+  --text: light-dark(var(--ink), var(--night-ink));
+  --text-muted: light-dark(oklch(0.48 0.01 220), oklch(0.75 0.01 90));
+  --accent: light-dark(var(--sage-600), var(--sage-300));
+  --accent-soft: light-dark(color-mix(in oklch, var(--sage-300) 35%, white),
+                            color-mix(in oklch, var(--sage-600) 35%, var(--night)));
+  --border: light-dark(oklch(0.9 0.01 var(--sage-hue)), oklch(0.34 0.012 var(--sage-hue)));
+  --highlight: light-dark(oklch(0.96 0.05 95), oklch(0.32 0.04 95));
+  --banner: light-dark(var(--sage-300), var(--sage-800));
+  --banner-text: light-dark(var(--sage-800), var(--sage-200));
+
+  /* Scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-s: 0.375rem;
+  --radius-m: 0.75rem;
+  --radius-l: 1.25rem;
+  --shadow: 0 1px 2px oklch(0 0 0 / 0.06), 0 4px 16px oklch(0 0 0 / 0.06);
+  --touch: 2.75rem; /* 44px minimum touch target */
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+}
+
+/* Quarto switches themes by enabling its dark Bootstrap stylesheet. */
+:root:has(link.quarto-color-alternate[href*="bootstrap-dark"][rel="stylesheet"]) {
+  color-scheme: dark;
+  --shadow: 0 1px 2px oklch(0 0 0 / 0.3), 0 4px 16px oklch(0 0 0 / 0.3);
+}
+
+/* ---------- Base ---------- */
+
+body {
+  background: var(--surface);
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+:where(h1, h2, h3, .title) {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+:where(a, button, input, summary):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
+::selection {
+  background: var(--sage-300);
+  color: var(--sage-800);
+}
+
+/* Title banner: sage instead of Bootstrap primary. */
+.quarto-title-banner {
+  background: var(--banner);
+  color: var(--banner-text);
+}
+.quarto-title-banner :is(h1, .title, .quarto-title-meta-heading, .quarto-title-meta-contents, a) {
+  color: inherit;
+}
+
+/* ---------- Home: recipe card grid ---------- */
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-6);
+  padding: 0;
+  margin-block: var(--space-4) var(--space-8);
+}
+
+.recipe-card {
+  /* Each card is a container, so its layout follows its own width, not the
+     viewport. */
+  container: card / inline-size;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* Skip rendering work for off-screen cards. */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 22rem;
+}
+
+.recipe-card:has(a:hover, a:focus-visible) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow), 0 0 0 2px var(--accent);
+}
+
+.recipe-card-media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: var(--accent-soft);
+}
+
+.recipe-card-placeholder {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--accent);
+  background:
+    radial-gradient(circle at 30% 20%, color-mix(in oklch, var(--accent-soft) 60%, transparent), transparent 60%),
+    linear-gradient(135deg, var(--accent-soft), color-mix(in oklch, var(--accent-soft), var(--surface-raised)));
+}
+
+.recipe-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  flex: 1;
+}
+
+.recipe-card-title {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.recipe-card-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* The whole card is clickable via the title link. */
+.recipe-card-title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.recipe-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-card-tags .listing-category {
+  /* Above the card-wide link, so tags stay clickable as filters. */
+  position: relative;
+  z-index: 1;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0.4em 0.75em;
+  min-height: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.recipe-card-tags .listing-category:hover {
+  border-color: var(--accent);
+}
+
+.recipe-card-date {
+  margin: auto 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Wide cards (e.g. one column on a tablet): photo beside the text. */
+@container card (width > 30rem) {
+  .recipe-card-media {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 40%;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .recipe-card-body {
+    margin-inline-start: 40%;
+    min-height: 12rem;
+  }
+}
+
+/* Category sidebar and search box. */
+.quarto-listing-category .category {
+  border-radius: var(--radius-s);
+  padding-block: var(--space-1);
+}
+.quarto-listing-category .category.active {
+  background: var(--accent-soft);
+  color: var(--text);
+  font-weight: 600;
+}
+.quarto-listing-filter .form-control {
+  border-radius: 999px;
+  min-height: var(--touch);
+}
+
+/* ---------- Recipe page ---------- */
+
+.recipe-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  max-height: 60vh;
+  object-fit: cover;
+  border-radius: var(--radius-l);
+  margin-block-end: var(--space-6);
+  box-shadow: var(--shadow);
+}
+
+/* "Keep screen on" switch (enabled by head.html where supported). */
+.wake-lock {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--touch);
+  padding: var(--space-1) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.wake-lock[hidden],
+#ingredients:not(:has(.ingredient)) .wake-lock {
+  display: none;
+}
+.wake-lock input {
+  accent-color: var(--accent);
+  inline-size: 1.25rem;
+  block-size: 1.25rem;
+}
+
+/* Ingredients: checkboxes to tick off while gathering. */
+#ingredients ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+#ingredients li {
+  margin: 0;
+}
+
+/* Pandoc's loose lists wrap each item in <p>; tighten them. */
+#ingredients li > p {
+  margin: 0;
+}
+
+.ingredient {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  min-height: var(--touch);
+  padding: var(--space-2) var(--space-2);
+  border-radius: var(--radius-s);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ingredient:hover {
+  background: var(--accent-soft);
+}
+
+.ingredient input {
+  flex: none;
+  inline-size: 1.15rem;
+  block-size: 1.15rem;
+  accent-color: var(--accent);
+  translate: 0 0.15em;
+}
+
+.ingredient:has(:checked) {
+  color: var(--text-muted);
+}
+.ingredient:has(:checked) span {
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+}
+
+/* "3 of 12 gathered", counted in CSS, shown once something is checked. */
+#ingredients {
+  counter-reset: ingredients-total ingredients-done;
+}
+.ingredient {
+  counter-increment: ingredients-total;
+}
+.ingredient:has(:checked) {
+  counter-increment: ingredients-total ingredients-done;
+}
+#ingredients:has(:checked)::after {
+  content: counter(ingredients-done) " of " counter(ingredients-total) " gathered";
+  display: block;
+  margin-block-start: var(--space-3);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Directions: tap a step number to mark where you are. */
+#directions ol {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+#directions ol > li {
+  position: relative;
+  padding: var(--space-3) var(--space-3) var(--space-3) calc(var(--touch) + var(--space-4));
+  margin-block: var(--space-2);
+  border-radius: var(--radius-m);
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+#directions ol > li > p {
+  margin: 0;
+}
+
+.step-marker {
+  position: absolute;
+  inset-inline-start: var(--space-2);
+  inset-block-start: var(--space-2);
+  display: grid;
+  place-items: center;
+  inline-size: var(--touch);
+  block-size: var(--touch);
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.step-marker input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.step-marker:has(:focus-visible) {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Current step */
+#directions li:has(> * > .step-marker :checked),
+#directions li:has(> .step-marker :checked) {
+  background: var(--highlight);
+}
+#directions .step-marker:has(:checked) {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+/* Steps before the current one look done. */
+#directions li:has(~ li :checked),
+#directions ol:has(~ * :checked) > li {
+  opacity: 0.55;
+}
+
+/* Wide content area: ingredients beside the directions, and sticky.
+   The page content is the container, so this follows the column's width. */
+#quarto-content {
+  container: page / inline-size;
+}
+
+@container page (width > 60rem) {
+  /* :where() keeps the IDs inside :has() from adding specificity. */
+  #quarto-content > main.content:where(:has(> #ingredients + #directions)) {
+    /* Break out of Quarto's narrow body column into the page column. */
+    grid-column: page-start / page-end;
+    display: grid;
+    grid-template-columns: minmax(17rem, 2fr) 3fr;
+    column-gap: var(--space-8);
+    align-items: start;
+  }
+  /* Intro, hero, notes: centered at a readable measure. */
+  main.content:where(:has(> #ingredients + #directions)) > * {
+    grid-column: 1 / -1;
+    justify-self: center;
+    inline-size: min(100%, 50rem);
+  }
+  main.content > #ingredients,
+  main.content > #directions {
+    inline-size: auto;
+    justify-self: stretch;
+  }
+  main.content > #ingredients {
+    grid-column: 1;
+    position: sticky;
+    inset-block-start: 4.5rem; /* below Quarto's fixed navbar */
+    max-block-size: calc(100dvh - 6rem);
+    overflow-y: auto;
+    padding: var(--space-4);
+    background: var(--surface-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-l);
+  }
+  main.content > #directions {
+    grid-column: 2;
+  }
+  main.content > #ingredients > h2 {
+    margin-block-start: 0;
+  }
+}
+
+@container page (width > 88rem) {
+  #quarto-content > main.content:where(:has(> #ingredients + #directions)) {
+    grid-column: screen-start-inset / screen-end-inset;
+    max-inline-size: 84rem;
+    justify-self: center;
+    inline-size: 100%;
+  }
+}
+
+/* ---------- Page transitions ---------- */
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+  .recipe-hero {
+    view-transition-name: recipe-hero;
+  }
+  #title-block-header h1.title {
+    view-transition-name: recipe-title;
+  }
+  ::view-transition-group(*) {
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recipe-card,
+  #directions ol > li {
+    transition: none;
+  }
+  .recipe-card:has(a:hover, a:focus-visible) {
+    transform: none;
+  }
+}
+
+/* ---------- Forced colors (Windows high contrast) ---------- */
+
+@media (forced-colors: active) {
+  .recipe-card,
+  .wake-lock,
+  .step-marker,
+  .recipe-card-tags .listing-category {
+    border: 1px solid CanvasText;
+  }
+  #directions .step-marker:has(:checked) {
+    background: Highlight;
+    color: HighlightText;
+    forced-color-adjust: none;
+  }
+  #directions li:has(:checked) {
+    outline: 2px solid Highlight;
+  }
+}
+
+/* ---------- Print: a clean sheet for the kitchen ---------- */
+
+@media print {
+  #quarto-header,
+  .wake-lock,
+  .recipe-hero,
+  .quarto-title-meta,
+  footer,
+  #quarto-margin-sidebar,
+  #source {
+    display: none !important;
+  }
+  .quarto-title-banner {
+    background: none !important;
+    color: black !important;
+  }
+  .ingredient input,
+  .step-marker input {
+    display: none;
+  }
+  .step-marker {
+    border-width: 1px;
+  }
+  #directions ol > li {
+    background: none !important;
+    opacity: 1 !important;
+    break-inside: avoid;
+  }
+  #ingredients,
+  #directions {
+    break-inside: avoid-page;
+  }
+}

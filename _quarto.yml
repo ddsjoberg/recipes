@@ -7,11 +7,17 @@ website:
     right:
       - icon: github
         href: https://github.com/ddsjoberg/recipes
+        aria-label: GitHub repository
+
 format:
   html:
-    theme: 
-      - yeti
-      - styles.scss
+    theme:
+      light: [yeti, styles.scss]
+      dark: [yeti, styles.scss, styles-dark.scss]
+    respect-user-color-scheme: true
+    css: assets/recipes.css
+    include-in-header: assets/head.html
+    filters:
+      - _filters/recipe.lua
 
 editor: visual
-

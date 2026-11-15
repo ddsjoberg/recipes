@@ -1,5 +1,6 @@
 ---
 title: "My Favorite Chicken"
+image: valentines-day.jpg
 date: "2023-06-12"
 categories: [cheng,chicken]
 ---
