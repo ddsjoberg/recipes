@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Crossed spoon and fork, cream on the navbar's dark sage.
+       Master for the PNG/ICO icons: run tools/make-favicons.R after editing. -->
+  <rect width="64" height="64" rx="14" fill="#2f3a34"/>
+  <g fill="#f3f1ea">
+    <g transform="rotate(45 32 32)">
+      <rect x="24.5" y="8" width="3.5" height="14" rx="1.75"/>
+      <rect x="30.25" y="8" width="3.5" height="14" rx="1.75"/>
+      <rect x="36" y="8" width="3.5" height="14" rx="1.75"/>
+      <path d="M24.5 18h15v3a7.5 7.5 0 0 1-7.5 7.5a7.5 7.5 0 0 1-7.5-7.5z"/>
+      <rect x="29.75" y="24" width="4.5" height="32" rx="2.25"/>
+    </g>
+    <g transform="rotate(-45 32 32)" stroke="#2f3a34" stroke-width="2.5" paint-order="stroke">
+      <ellipse cx="32" cy="17" rx="7.5" ry="10"/>
+      <rect x="29.75" y="24" width="4.5" height="32" rx="2.25"/>
+    </g>
+  </g>
+</svg>
