@@ -21,11 +21,11 @@ categories: [cheng,pork]
 
 ## Directions
 
-1.  Cook udon noodles according to package instructions and set aside
-2.  Chop onion, and saute in oil in pan
-3.  Add meat to pan. Sl and cook through
-4.  Add BBQ and Soy Sauce to pan
-5.  Mix in noodles and serve
+1.  Cook udon noodles according to package instructions and set aside.
+2.  Chop the onion and sauté in oil in a pan.
+3.  Add meat to the pan. Stir and cook through.
+4.  Add BBQ and soy sauce to the pan.
+5.  Mix in noodles and serve.
 
 ![](bbq-noodles-1600.webp){width=50%}
 

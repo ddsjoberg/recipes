@@ -1,5 +1,5 @@
 ---
-title: "Beef Brocolli"
+title: "Beef Broccoli"
 date: "2023-06-12"
 categories: [cheng,beef]
 ---
