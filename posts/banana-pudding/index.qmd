@@ -1,5 +1,6 @@
 ---
 title: "Banana Pudding"
+image: PXL_20230721_235932496.PORTRAIT-1600.webp
 date: "2023-11-19"
 categories: [dessert]
 ---
@@ -29,4 +30,4 @@ This recipe comes from the [Magnolia Bakery Cookbook](https://www.the-girl-who-a
 
 *Note*: The pudding can be pretty sweet and I like to add a bit more whipped cream to balance the flavor.
 
-![](PXL_20230721_235932496.PORTRAIT.jpg)
+![](PXL_20230721_235932496.PORTRAIT-1600.webp)

@@ -1,0 +1,76 @@
+<meta name="theme-color" content="#2f3a34" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1311" media="(prefers-color-scheme: dark)">
+
+<!-- Prerender recipe pages when a link is hovered or pressed. Browsers without
+     the Speculation Rules API ignore this. -->
+<script type="speculationrules">
+{
+  "prerender": [{
+    "where": { "and": [
+      { "href_matches": "/*" },
+      { "selector_matches": ".recipe-card a, a[href*='posts/']" }
+    ]},
+    "eagerness": "moderate"
+  }]
+}
+</script>
+
+<script>
+  // Cross-document view transitions: the clicked card's photo and title morph
+  // into the recipe page's hero and title (and back). Recipe pages use fixed
+  // names (see recipes.css); here the listing assigns the same names to the
+  // one card involved, only for the duration of the transition.
+  (() => {
+    const names = (card, on) => {
+      if (!card) return;
+      const img = card.querySelector(".recipe-card-media");
+      const title = card.querySelector(".recipe-card-title");
+      if (img) img.style.viewTransitionName = on ? "recipe-hero" : "";
+      if (title) title.style.viewTransitionName = on ? "recipe-title" : "";
+    };
+    const cardFor = (url) => {
+      if (!url) return null;
+      const path = new URL(url).pathname.replace(/index\.html$/, "");
+      return [...document.querySelectorAll(".recipe-card")].find((c) => {
+        const a = c.querySelector("a[href]");
+        return a && new URL(a.href).pathname.replace(/index\.html$/, "") === path;
+      });
+    };
+    addEventListener("pageswap", (e) => {
+      if (!e.viewTransition) return;
+      const card = cardFor(e.activation?.entry?.url);
+      names(card, true);
+    });
+    addEventListener("pagereveal", (e) => {
+      if (!e.viewTransition || !window.navigation?.activation) return;
+      const card = cardFor(navigation.activation.from?.url);
+      names(card, true);
+      e.viewTransition.ready.finally(() => names(card, false));
+    });
+  })();
+
+  // "Keep screen on" switch for recipe pages (Screen Wake Lock API). The switch
+  // stays hidden in browsers without the API.
+  addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".wake-lock input");
+    if (!toggle || !("wakeLock" in navigator)) return;
+    toggle.closest(".wake-lock").hidden = false;
+    let lock = null;
+    const acquire = async () => {
+      try {
+        lock = await navigator.wakeLock.request("screen");
+        lock.addEventListener("release", () => { lock = null; });
+      } catch {
+        toggle.checked = false;
+      }
+    };
+    toggle.addEventListener("change", () => {
+      if (toggle.checked) acquire();
+      else lock?.release();
+    });
+    // The browser releases the lock when the tab is hidden; take it back.
+    document.addEventListener("visibilitychange", () => {
+      if (toggle.checked && !lock && document.visibilityState === "visible") acquire();
+    });
+  });
+</script>

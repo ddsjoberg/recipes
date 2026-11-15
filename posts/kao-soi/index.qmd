@@ -1,5 +1,6 @@
 ---
 title: "Kao Soi"
+image: PXL_20231118_020028211.PORTRAIT-1600.webp
 date: "2023-11-12"
 categories: [chicken,soup]
 ---
@@ -63,8 +64,8 @@ Garnish
 
 *Notes*: Added a couple of dry chilies gave the soup a small and enjoyable spicy kick.
 
-![](PXL_20231118_020028211.PORTRAIT.jpg)
+![](PXL_20231118_020028211.PORTRAIT-1600.webp)
 
-![](PXL_20231118_015804259.jpg)
+![](PXL_20231118_015804259-1600.webp)
 
-## ![](IMG-20231112-WA0000.jpg)
+![](IMG-20231112-WA0000.jpg)
