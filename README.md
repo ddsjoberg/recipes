@@ -62,7 +62,11 @@ Anything you'd change next time.
 so keep them spelled exactly like this:
 
 - `## Ingredients` — every bullet (`-`) becomes a checkbox you can tick off.
-  Subheadings like `#### Sauce` are fine for grouping.
+  Subheadings like `#### Sauce` are fine for grouping. A ½× / 1× / 2× / 3×
+  picker rescales the amounts, so start each bullet with the amount
+  (`1 ½ cups sugar`, `2-3 cloves garlic`). Amounts in parentheses that restate
+  the total, like `1 pound (450g)`, are scaled too. Package sizes, like
+  `1 (14 oz) can` or `1 can (6oz)`, are not.
 - `## Directions` — every numbered step (`1.`) gets a tappable step number to
   mark where you are.
 
@@ -126,7 +130,8 @@ built automatically.
 | `_quarto.yml` | Site settings, themes, and where the files below are hooked in. |
 | `index.qmd` + `_listing-cards.ejs` | Home page and its recipe card grid. |
 | `posts/_metadata.yml` | Settings shared by every recipe. |
-| `_filters/recipe.lua` | Turns ingredients into checkboxes, adds step markers, the hero photo, and image alt text. |
+| `_filters/recipe.lua` | Turns ingredients into checkboxes, adds step markers, the scale picker, the hero photo, and image alt text. |
+| `assets/scale.js` | Rescales ingredient amounts when you pick ½×, 2× or 3×. |
 | `assets/recipes.css` | Site styles: colors, cards, recipe layout, print. |
 | `assets/head.html` | Page transitions, link prerendering, and the "Keep screen on" switch. |
 | `styles.scss`, `styles-dark.scss` | Bootstrap theme settings for light and dark mode. |
