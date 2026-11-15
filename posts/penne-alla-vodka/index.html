@@ -90,6 +90,9 @@ ul.task-list li input[type="checkbox"] {
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
 
+<!-- Ingredient scaling picker on recipe pages. -->
+<script src="../../assets/scale.js" defer=""></script>
+
 <!-- Prerender recipe pages when a link is hovered or pressed. Browsers without
      the Speculation Rules API ignore this. -->
 <script type="speculationrules">
@@ -421,7 +424,16 @@ ul.task-list li input[type="checkbox"] {
 <p>This recipe was first introduced to us by Avi in March 2023. The recipe below is modified from <a href="https://www.seriouseats.com/pasta-with-vodka-sauce">Serious Eats</a>.</p>
 <section id="ingredients" class="level2">
 <h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<div class="recipe-tools">
+<fieldset class="recipe-scale" hidden="">
+<legend>Scale</legend>
+<label><input type="radio" name="recipe-scale" value="0.5"><span>½×</span></label>
+<label><input type="radio" name="recipe-scale" value="1" checked=""><span>1×</span></label>
+<label><input type="radio" name="recipe-scale" value="2"><span>2×</span></label>
+<label><input type="radio" name="recipe-scale" value="3"><span>3×</span></label>
+</fieldset>
 <label class="wake-lock" hidden=""><input type="checkbox" switch="" role="switch"> Keep screen on</label>
+</div>
 <ul>
 <li><p><label class="ingredient"><input type="checkbox"><span>3 T unsalted butter</span></label></p></li>
 <li><p><label class="ingredient"><input type="checkbox"><span>1 medium (8-ounce) yellow onion, diced</span></label></p></li>

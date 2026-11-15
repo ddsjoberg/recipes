@@ -90,6 +90,9 @@ ul.task-list li input[type="checkbox"] {
 <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
 
+<!-- Ingredient scaling picker on recipe pages. -->
+<script src="../../assets/scale.js" defer=""></script>
+
 <!-- Prerender recipe pages when a link is hovered or pressed. Browsers without
      the Speculation Rules API ignore this. -->
 <script type="speculationrules">
@@ -420,7 +423,16 @@ ul.task-list li input[type="checkbox"] {
 <img class="recipe-hero" src="valentines-day.jpg" alt="My Favorite Chicken" width="1154" height="865" fetchpriority="high" decoding="async">
 <section id="ingredients" class="level2">
 <h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<div class="recipe-tools">
+<fieldset class="recipe-scale" hidden="">
+<legend>Scale</legend>
+<label><input type="radio" name="recipe-scale" value="0.5"><span>½×</span></label>
+<label><input type="radio" name="recipe-scale" value="1" checked=""><span>1×</span></label>
+<label><input type="radio" name="recipe-scale" value="2"><span>2×</span></label>
+<label><input type="radio" name="recipe-scale" value="3"><span>3×</span></label>
+</fieldset>
 <label class="wake-lock" hidden=""><input type="checkbox" switch="" role="switch"> Keep screen on</label>
+</div>
 </section>
 <section id="directions" class="level2">
 <h2 class="anchored" data-anchor-id="directions">Directions</h2>

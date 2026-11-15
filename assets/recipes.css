@@ -250,6 +250,80 @@ body {
   box-shadow: var(--shadow);
 }
 
+/* Cooking tools row at the top of Ingredients: scale picker + screen switch. */
+.recipe-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+}
+#ingredients:not(:has(.ingredient)) .recipe-tools {
+  display: none;
+}
+
+/* Scale picker (enabled by assets/scale.js): a segmented pill of radios. */
+.recipe-scale {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.1875rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-raised);
+  min-height: var(--touch);
+}
+.recipe-scale[hidden] {
+  display: none;
+}
+.recipe-scale legend {
+  float: left; /* lets the legend sit inline inside the fieldset */
+  width: auto;
+  margin: 0;
+  padding: 0 var(--space-2) 0 var(--space-3);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.recipe-scale label {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 2.75rem;
+  min-height: calc(var(--touch) - 0.5rem);
+  padding: 0 var(--space-2);
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.recipe-scale label:hover {
+  background: var(--accent-soft);
+}
+.recipe-scale input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.recipe-scale label:has(:checked) {
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 600;
+}
+.recipe-scale label:has(:focus-visible) {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Amounts the picker has changed. */
+.qty-scaled {
+  background: var(--highlight);
+  border-radius: var(--radius-s);
+  padding-inline: 0.15em;
+  margin-inline: -0.15em;
+  box-decoration-break: clone;
+}
+
 /* "Keep screen on" switch (enabled by head.html where supported). */
 .wake-lock {
   display: inline-flex;
@@ -496,11 +570,13 @@ body {
 @media (forced-colors: active) {
   .recipe-card,
   .wake-lock,
+  .recipe-scale,
   .step-marker,
   .recipe-card-tags .listing-category {
     border: 1px solid CanvasText;
   }
-  #directions .step-marker:has(:checked) {
+  #directions .step-marker:has(:checked),
+  .recipe-scale label:has(:checked) {
     background: Highlight;
     color: HighlightText;
     forced-color-adjust: none;
@@ -514,7 +590,7 @@ body {
 
 @media print {
   #quarto-header,
-  .wake-lock,
+  .recipe-tools,
   .recipe-hero,
   .quarto-title-meta,
   footer,
@@ -529,6 +605,13 @@ body {
   .ingredient input,
   .step-marker input {
     display: none;
+  }
+  .qty-scaled {
+    background: none;
+  }
+  /* The picker is hidden, so say which batch size the amounts are for. */
+  #ingredients.is-scaled > h2::after {
+    content: " (" attr(data-scale-label) ")";
   }
   .step-marker {
     border-width: 1px;
