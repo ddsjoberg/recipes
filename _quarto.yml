@@ -1,8 +1,15 @@
 project:
   type: website
+  resources:
+    - assets/favicon.svg
+    - assets/apple-touch-icon.png
+    - assets/icon-192.png
+    - assets/icon-512.png
+    - site.webmanifest
 
 website:
   title: "Sjochengberg Recipes"
+  favicon: assets/favicon.ico
   navbar:
     right:
       - icon: github
